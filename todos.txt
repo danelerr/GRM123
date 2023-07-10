@@ -1,0 +1,16 @@
+  //Comentario de línea. Pruebe su analex con este archivo.
+
+main void if else for to while repeat until readln print println
+, ; : ( ) { } := 
+not ! and  & or | false true
++ - * mod % div / ++ --	
+return
+123 var123 "Hola mundo"
+
+/*
+  Comentario
+  multilínea
+*/
+
+= < > <= >= !=	
+string boolean int

@@ -1,0 +1,43 @@
+//Ejemplo de un programa, escrito en el lenguaje GRM123.
+
+var sw : boolean;		//Solo trabaja con variables globales.
+var altura, N : int;		//Se permite una sola línea de declaración, después de var.
+var s, str, name : string; 	//Solo se usan los tipos boolean, int y string.
+
+void lectura(){
+  sw := true;
+  repeat			/* El repeat-until, no usa llaves */
+    print("Introduzca N: ");	//Se usa print y println para salida en consola.
+    readln(N);
+    sw := (N >= 0);
+    if (!sw)
+       println("El valor ", N, " es incorrecto");
+    else
+      return; 
+  until (false);
+}
+
+var i, f : int;
+
+void factorial(){
+  f := 1;
+  for i:=1 to N{
+    f := f * i;
+  }
+}
+
+void factorial2(){
+  i := 2;
+  i--;  
+  f := 1;
+  while (i<=N){
+    f := f * i;
+    i++;
+  }
+}
+
+main(){	//main  es una palabra reservada  (no se antepone la palabra void).
+  lectura();
+  factorial();
+  println("El factorial de ", N, " es ", f); 
+}
